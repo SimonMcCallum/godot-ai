@@ -314,3 +314,6 @@ This example is a very messy implementation of the BehaviourToolkit and is only 
   - You can revive them by clicking on them, which will leave the State Machine and return them to their normal behaviour.
 
 There also is a seperate `FiniteStateMachine` used for handling simple animations.
+
+## Example: Narrative NPC
+`narrative_npc.gd` demonstrates how to connect an NPC to Google's Gemini Flash API for dialogue. The node exposes an `ask()` function which sends text to the API and emits `reply_received` when the model answers. You must provide your own API key and should note that the service is not moderated and may produce offensive or inaccurate content.
