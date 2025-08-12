@@ -281,6 +281,11 @@ You can find all templates inside the `script_templates` directory, so make sure
 - FSMTransition
 - BTLeaf
 
+## NarrativeNPC
+The `NarrativeNPC` node can be used to create conversational characters backed by Google's Gemini Flash API.
+Set your Gemini API key in the node's `api_key` property and use the `ask(prompt)` method to send the player input.
+When a response is received the node emits the `response_received` signal with the generated text.
+
 
 
 # Examples
